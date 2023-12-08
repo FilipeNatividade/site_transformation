@@ -199,15 +199,15 @@ footer {
 
 .redes_sociais_header {
   display: none;
-  background-color: var(--color_cinza_claro);
-  height: 40%;
-  width: 100%;
 }
 
 /* ==========REDES SOCIAIS TABLET========== */
 
 @media (min-width: 768px) {
   .redes_sociais_header {
+    background-color: var(--color_cinza_claro);
+    height: 40%;
+    width: 100%;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -262,7 +262,7 @@ footer {
 }
 
 .nav_bar {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: var(--color_branco);
   padding: var(--padding_mobile);
   height: max-content;
   display: none;
@@ -271,6 +271,7 @@ footer {
   gap: 20px;
   position: absolute;
   top: 50px;
+  font-weight: bold;
 }
 
 .menu_label {
@@ -314,6 +315,11 @@ footer {
 /* ==========MENU DESKTOP========== */
 
 @media (min-width: 1000px) {
+  .nav_bar {
+    font-size: var(--font_size_16);
+    gap: 30px;
+    padding-right: var(--padding_desktop);
+  }
 }
 
 /* ==========PRIMEIRA SEÇÃO MOBILE========== */
@@ -322,6 +328,7 @@ footer {
   background-image: url(assets/background_primeira_secao.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   color: var(--color_branco);
   padding-right: var(--padding_mobile);
   display: flex;
@@ -432,7 +439,7 @@ footer {
 
 .segunda_secao > .cards_box_segunda_secao > .card_segunda_secao > h4 {
   color: var(--color_azul_claro);
-  font-size: var(--font_size_18);
+  font-size: var(--font_size_50);
 }
 
 .segunda_secao > .cards_box_segunda_secao > .card_segunda_secao > p {
@@ -596,6 +603,8 @@ footer {
 .sexta_secao > .cards_box > .card {
   display: flex;
   gap: 20px;
+  min-width: 265px;
+  min-height: 135px;
 }
 
 .sexta_secao > .cards_box > .card > .circulo {
@@ -633,6 +642,9 @@ footer {
   .sexta_secao > .cards_box > .card {
     flex-direction: column;
     align-items: center;
+    min-height: 322px;
+    justify-content: flex-start;
+    min-width:fit-content
   }
 
   .sexta_secao > .cards_box > .card > .circulo {
