@@ -124,6 +124,7 @@ button {
 input,
 textarea {
   border: none;
+  outline: none;
 }
 
 /* styles */
